@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the application -->
+    <title>Drag and Drop App</title>
+    <!-- Links to an external CSS file for styling the application -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Main title for the app -->
+    <h1>Fruits & Vegetables</h1>
+    <!-- Subtitle indicating the functionality of the app -->
+    <h1>Drag and Drop</h1>
+    
+    <!-- Main container for the list of items and drop areas -->
+    <div class="container">
+        <!-- Section for displaying items available for dragging -->
+        <div class="list">
+            <h2>Items</h2>
+            <!-- Empty unordered list where JavaScript will dynamically populate items from JSON data -->
+            <ul id="itemList"></ul>
+        </div>
+        
+        <!-- Drop areas for categorizing fruits and vegetables -->
+        <div class="drop-area">
+            <!-- Drop container for fruits -->
+            <div id="fruitsContainer" class="drop-container" 
+                 ondrop="drop(event)"            
+                 ondragover="allowDrop(event)"  
+                 data-type="fruit">              <!-- Custom attribute indicating this is a fruit container -->
+                <h2>Fruits</h2>
+                <ul></ul>                        <!-- List where dropped fruits will be added -->
+            </div>
+            
+            <!-- Drop container for vegetables -->
+            <div id="vegetablesContainer" class="drop-container" 
+                 ondrop="drop(event)"            
+                 ondragover="allowDrop(event)"   
+                 data-type="vegetable">          <!-- Custom attribute indicating this is a vegetable container -->
+                <h2>Vegetables</h2>
+                <ul></ul>                        <!-- List where dropped vegetables will be added -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Error message display area, dynamically updated by JavaScript when invalid drop actions occur -->
+    <div id="error-message" class="error-message"></div>
+
+    <!-- Link to external JavaScript file containing logic for drag and drop functionality -->
+    <script src="js/main.js"></script>
+</body>
+</html>

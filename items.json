@@ -1,0 +1,14 @@
+{
+    "items": [
+        {"id": 1, "name": "Acai", "category": "fruit"},
+        {"id": 2, "name": "Dragon Fruit", "category": "fruit"},
+        {"id": 3, "name": "Guava", "category": "fruit"},
+        {"id": 4, "name": "Passion fruit", "category": "fruit"},
+        {"id": 5, "name": "Pineberry", "category": "fruit"},
+        {"id": 6, "name": "Zucchini", "category": "vegetable"},
+        {"id": 7, "name": "Celery", "category": "vegetable"},
+        {"id": 8, "name": "Asparagus", "category": "vegetable"},
+        {"id": 9, "name": "Eggplant", "category": "vegetable"},
+        {"id": 10, "name": "Potato", "category": "vegetable"}
+    ]
+}

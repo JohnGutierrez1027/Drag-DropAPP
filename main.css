@@ -1,0 +1,110 @@
+/* Style and apply box-sizing to all elements,padding and border are included in total width and height */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+/* Style for the body element */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #3b3939;
+    color: #ffffff;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+/* Style for the page title */
+h1 {
+    color: #e4dbd7;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+/* Style for the items's list title */
+h2 {
+    color:  #12c433;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Style for main container for the drag-and-drop app */
+.container {
+    display: flex;
+    gap: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+}
+
+/* Style for the list of items */
+.list {
+    width: 200px;
+}
+
+/* Style for each list item */
+.list ul {
+    list-style-type: none;
+}
+
+.list li {
+    padding: 10px;
+    background-color: #444;
+    margin: 5px 0;
+    border: 1px solid #555;
+    border-radius: 4px;
+    color: #e6d447;
+    cursor: grab;
+    text-align: center;
+}
+
+/* Style for the drop area container */
+.drop-area {
+    display: flex;
+    gap: 20px;
+}
+
+/* Style for individual drop containers */
+.drop-container {
+    width: 200px;
+    min-height: 300px;
+    padding: 10px;
+    border: 3px dashed #12c433;
+    border-radius: 8px;
+    background-color: #333;
+    transition: background-color 0.3s;
+    color: #3b87ce;
+}
+
+/* Style for heading drop container */
+.drop-container h2 {
+    text-align: center;
+    color: #12c433;
+}
+
+/* Style for the unordered list inside drop containers */
+.drop-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for drop container when an item is dragged over it */
+.drop-container.dragover {
+    background-color: #555;
+}
+
+/* Style for error messages */
+#error-message {
+    color: rgb(175, 25, 165);
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-align: center;
+    visibility: hidden;
+}
